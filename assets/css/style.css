@@ -20,6 +20,10 @@
     background-color: #e5e5e5;
 }
 
+.bg_top_sider {
+    background-color: #051e34;
+}
+
 /* #endregion utilities */
 /* #endregion header  */
 
@@ -61,14 +65,14 @@ main {
 /* #endregion bottom */
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
 
     #sidebar {
-        width: 100px;
+        width: 150px;
     }
 
     main {
-        width:calc(100% - 100px)
+        width:calc(100% - 150px)
     }
     
 }
