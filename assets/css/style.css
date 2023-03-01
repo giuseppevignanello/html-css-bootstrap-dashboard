@@ -1,13 +1,26 @@
 
+
+
 /* #region header  */
-#nav_header {
+#app_header {
     height: 50px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 .debug #nav_header {
 
     background-color: green;
 }
 
+
+/* #region utilities */
+.bg_search_form {
+    background-color: #e5e5e5;
+}
+
+/* #endregion utilities */
 /* #endregion header  */
 
 /* #region bottom */

@@ -14,12 +14,30 @@
     <title>Boolean Dashboard</title>
 </head>
 
-<body class="debug">
+<body>
     <div id="top">
         <header id="app_header">
-            <nav id="nav_header">
-
-            </nav>
+            <nav class="navbar bg-body-tertiary">
+                <div class="container-fluid">
+                  <div id="logo_section">
+                    <a class="navbar-brand d-lg-none" href="#">
+                        <img src="assets/img/mobile-logo.png" alt="Boolean" width="30" height="30">
+                    </a>
+                    <a class="navbar-brand d-none d-lg-inline" href="#">
+                        <img src="./assets/img/logo.svg" alt="Logo" class="d-inline-block align-text-top">
+                    </a>
+                  </div>
+                  <form class="d-flex col" role="search">
+                    <input class="form-control me-2 bg_search_form" type="search" placeholder="&#x1F50D; Prova a cercare: Lezioni di laravel" aria-label="Search">
+                  </form>
+                  <div id="header_buttons">
+                    <a href="" class="d-none d-lg-inline text text-muted"><i class="fa-solid fa-list"></i></a>
+                    <a href="" class="d-none d-lg-inline text-muted"><i class="fa-solid fa-circle-question"></i></a>
+                    <a href="" class="d-none d-lg-inline text-muted"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                    <a href="" class="text-warning"><i class="fa-solid fa-bell"></i></a>
+                </div>
+                </div>
+              </nav>
         </header>
         <!-- /app_header -->
     </div>
