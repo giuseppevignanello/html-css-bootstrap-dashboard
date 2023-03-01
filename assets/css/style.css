@@ -49,7 +49,6 @@
 
 /* #region bottom */
 #bottom {
-    height: calc(100vh - 50px);
     overflow-x: hidden;
 }
 /* #region sidebar */
