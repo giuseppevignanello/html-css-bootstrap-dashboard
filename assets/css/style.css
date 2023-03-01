@@ -1,6 +1,5 @@
 
 
-
 /* #region header  */
 #app_header {
     height: 50px;
@@ -86,11 +85,20 @@ main {
     background-color: yellow;
 }
 
+/* #region main_left  */
+
+#main_left img {
+    width: 30px;
+    aspect-ratio: 1;
+}
+
+/* #region main_left  */
+
 /* #endregion main */
 
 /* #endregion bottom */
 
-
+/* #region responsive */
 @media screen and (min-width: 992px) {
 
     #sidebar {
@@ -103,3 +111,5 @@ main {
     }
     
 }
+
+/* #enregion responsive */
