@@ -16,7 +16,7 @@
 
 
 /* #region utilities */
-.bg_app_header {
+.bg_primary {
     background-color: #f8f9fa;
 }
 
@@ -42,6 +42,8 @@
     background-color: #165bba;
 }
 
+
+
 /* #endregion utilities */
 /* #endregion header  */
 
@@ -55,7 +57,7 @@
     position:fixed;
     left:0;
     top:50px;
-    height: 100%;
+    height: calc(100% - 50px);
     z-index: 900;
 }
 

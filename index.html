@@ -16,7 +16,7 @@
 
 <body>
     <div id="top">
-        <header id="app_header" class="bg_app_header">
+        <header id="app_header" class="bg_primary">
             <nav class="navbar bg_header_nav">
                 <div class="container-fluid">
                     <div id="logo_section">
@@ -68,7 +68,7 @@
             </div>
         </div>
         <!-- /sidebar -->
-        <main>
+        <main class="bg_primary">
             <header id="content_header" class="bg-primary text-white py-4 px-2 ">
                 <div class="row d-flex flex-column flex-md-row justify-content-md-between">
                     <div id="new_student" class="col d-flex align-items-center align-items-md-start mb-3 order-md-3 ">
@@ -102,133 +102,150 @@
             </header>
 
             <!-- /content_header -->
-            <div class="row my-4 mx-2 overflow-auto">
-                <section id="main_left" class="col-12 col-md-8">
-                    <div class="card">
-                        <div class="card-header">
-                            <h3>Prossime classi</h3>
+            <div class="container">
+                <div class="row my-4 justify-content-between">
+                    <section id="main_left" class="col-12 col-md-8">
+                        <div class="card my-3">
+                            <div class="card-header">
+                                <h3>Prossime classi</h3>
+                            </div>
+                            <div class="card-body">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" class=" fw-normal">Nome</th>
+                                            <th scope="col" class="d-none d-md-table-cell  fw-normal">Data
+                                                inizio</th>
+                                            <th scope="col" class="d-none d-md-table-cell fw-normal">ROI
+                                            </th>
+                                            <th scope="col" class="fw-normal">Stato </th>
+                                            <th scope="col" class="fw-normal">Azioni</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">
+                                                <img class="img-fluid" src="./assets/img/class-avatar.jpg"
+                                                    alt="class avatar">
+                                                <span class="fw-normal"> Classe 75</span>
+                                            </th>
+                                            <td class="d-none d-md-table-cell">15 febbraio 2021</td>
+                                            <td class="d-none d-md-table-cell">20%</td>
+                                            <td>
+                                                <span class="badge text-bg-success">Done</span>
+                                            </td>
+                                            <td class="d-flex">
+                                                <button type="button" class="me-2 btn btn-outline-secondary"><i
+                                                        class="fa-solid fa-pencil"></i></button>
+                                                <button type="utton" class="me-2 btn btn-outline-secondary"><i
+                                                        class="fa-solid fa-trash"></i></button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <img class="img-fluid" src="./assets/img/class-avatar.jpg"
+                                                    alt="class avatar">
+                                                <span class="fw-normal"> Classe 75</span>
+                                            </th>
+                                            <td class="d-none d-md-table-cell">15 febbraio 2021</td>
+                                            <td class="d-none d-md-table-cell">20%</td>
+                                            <td>
+                                                <span class="badge text-bg-success">Done</span>
+                                            </td>
+                                            <td class="d-flex">
+                                                <button type="button" class="me-2 btn btn-outline-secondary"><i
+                                                        class="fa-solid fa-pencil"></i></button>
+                                                <button type="utton" class="me-2 btn btn-outline-secondary"><i
+                                                        class="fa-solid fa-trash"></i></button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <!-- /table -->
+
+                                
+
+                                <!-- /FAQ -->
+                            </div>
+                           
                         </div>
-                        <div class="card-body">
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th scope="col" class=" fw-normal">Nome</th>
-                                        <th scope="col" class="d-none d-md-table-cell  fw-normal">Data
-                                            inizio</th>
-                                        <th scope="col" class="d-none d-md-table-cell fw-normal">ROI
-                                        </th>
-                                        <th scope="col" class="fw-normal">Stato </th>
-                                        <th scope="col" class="fw-normal">Azioni</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <th scope="row">
-                                            <img class="img-fluid" src="./assets/img/class-avatar.jpg"
-                                                alt="class avatar">
-                                            <span class="fw-normal"> Classe 75</span>
-                                        </th>
-                                        <td class="d-none d-md-table-cell">15 febbraio 2021</td>
-                                        <td class="d-none d-md-table-cell">20%</td>
-                                        <td>
-                                            <span class="badge text-bg-success">Done</span>
-                                        </td>
-                                        <td class="d-flex">
-                                            <button type="button" class="me-2 btn btn-outline-secondary"><i
-                                                    class="fa-solid fa-pencil"></i></button>
-                                            <button type="utton" class="me-2 btn btn-outline-secondary"><i
-                                                    class="fa-solid fa-trash"></i></button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">
-                                            <img class="img-fluid" src="./assets/img/class-avatar.jpg"
-                                                alt="class avatar">
-                                            <span class="fw-normal"> Classe 75</span>
-                                        </th>
-                                        <td class="d-none d-md-table-cell">15 febbraio 2021</td>
-                                        <td class="d-none d-md-table-cell">20%</td>
-                                        <td>
-                                            <span class="badge text-bg-success">Done</span>
-                                        </td>
-                                        <td class="d-flex">
-                                            <button type="button" class="me-2 btn btn-outline-secondary"><i
-                                                    class="fa-solid fa-pencil"></i></button>
-                                            <button type="utton" class="me-2 btn btn-outline-secondary"><i
-                                                    class="fa-solid fa-trash"></i></button>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                        <div id="FAQ">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h3>F.A.Q.</h3>
+                                </div>
+                                <div class="card-body">
+                                    <div class="accordion" id="accordionExample">
+                                        <div class="accordion-item border-0 rounded-0 border-bottom">
+                                            <h2 class="accordion-header" id="headingOne">
+                                                <button class="accordion-button" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                    aria-expanded="true" aria-controls="collapseOne">
+                                                    Come aggiungere un nuovo studente?
+                                                </button>
+                                            </h2>
+                                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                                aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    Clicca sul + in alto nella sezione blu
 
-                            <!-- /table -->
-
-                            <section id="FAQ">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h3>F.A.Q.</h3>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="accordion" id="accordionExample">
-                                            <div class="accordion-item border-0 rounded-0 border-bottom">
-                                                <h2 class="accordion-header" id="headingOne">
-                                                    <button class="accordion-button" type="button"
-                                                        data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                                                        aria-expanded="true" aria-controls="collapseOne">
-                                                        Come aggiungere un nuovo studente?
-                                                    </button>
-                                                </h2>
-                                                <div id="collapseOne" class="accordion-collapse collapse show"
-                                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                                    <div class="accordion-body">
-                                                        Clicca sul + in alto nella sezione blu
-    
-                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="accordion-item border-0 rounded-0 border-bottom">
-                                                <h2 class="accordion-header" id="headingTwo">
-                                                    <button class="accordion-button collapsed" type="button"
-                                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                                        aria-expanded="false" aria-controls="collapseTwo">
-                                                        Come posso accedere alle informazioni del mio account?
-                                                    </button>
-                                                </h2>
-                                                <div id="collapseTwo" class="accordion-collapse collapse"
-                                                    aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                                    <div class="accordion-body">
-                                                        Clicca sull'icona della campanella
-                                                    </div>
+                                        </div>
+                                        <div class="accordion-item border-0 rounded-0 border-bottom">
+                                            <h2 class="accordion-header" id="headingTwo">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                    aria-expanded="false" aria-controls="collapseTwo">
+                                                    Come posso accedere alle informazioni del mio account?
+                                                </button>
+                                            </h2>
+                                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                                aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    Clicca sull'icona della campanella
                                                 </div>
                                             </div>
-                                            <div class="accordion-item border-0 rounded-0">
-                                                <h2 class="accordion-header" id="headingThree">
-                                                    <button class="accordion-button collapsed" type="button"
-                                                        data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                                                        aria-expanded="false" aria-controls="collapseThree">
-                                                        Posso usare questa dashboard da mobile?
-                                                    </button>
-                                                </h2>
-                                                <div id="collapseThree" class="accordion-collapse collapse"
-                                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                                    <div class="accordion-body">
-                                                       Io la sto facendo responsive,ma nel video la risposta a questa domanda non si vede
-                                                    </div>
+                                        </div>
+                                        <div class="accordion-item border-0 rounded-0">
+                                            <h2 class="accordion-header" id="headingThree">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                    aria-expanded="false" aria-controls="collapseThree">
+                                                    Posso usare questa dashboard da mobile?
+                                                </button>
+                                            </h2>
+                                            <div id="collapseThree" class="accordion-collapse collapse"
+                                                aria-labelledby="headingThree"
+                                                data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    Io la sto facendo responsive,ma nel video la risposta a
+                                                    questa domanda non si vede
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </section>
-
-                            <!-- /FAQ -->
+                            </div>
                         </div>
-                    </div>
-                </section>
-                <!-- /#main_left -->
-                <section id="main_right" class="col-12 col-md-4">
-
-                </section>
+                    </section>
+                    <!-- /#main_left -->
+                    <section id="main_right" class="col-12 col-md-4">
+                        <div>
+                            <div class="card" style="width: 18rem;">
+                                <div class="card-header">
+                                    <h3>Todo</h3>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">An item</li>
+                                    <li class="list-group-item">A second item</li>
+                                    <li class="list-group-item">A third item</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                </div>
             </div>
 
             <!-- /#main_right -->
