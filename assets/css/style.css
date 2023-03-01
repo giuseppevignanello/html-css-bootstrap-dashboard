@@ -4,10 +4,11 @@
 /* #region header  */
 #app_header {
     height: 50px;
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 1000;
 }
 .debug #nav_header {
 
@@ -52,6 +53,11 @@
 /* #region sidebar */
 #sidebar {
     width: 50px;
+    position:fixed;
+    left:0;
+    top:50px;
+    height: 100%;
+    z-index: 900;
 }
 
 .debug #sidebar {
@@ -65,6 +71,8 @@
 
 main {
     width: calc(100% - 50px);
+    margin-top: 50px;
+    margin-left:50px
 }
 .debug main {
   
@@ -90,7 +98,8 @@ main {
     }
 
     main {
-        width:calc(100% - 150px)
+        width:calc(100% - 150px);
+        margin-left: 150px
     }
     
 }

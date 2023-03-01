@@ -45,7 +45,7 @@
     </div>
     <!-- /#top -->
     <div id="bottom" class="d-flex">
-        <div id="sidebar" class="text-white d-flex flex-column justify-content-between bg_sidebar">
+        <div id="sidebar" class="text-white d-flex flex-column justify-content-between bg_sidebar ">
             <div id="top_sidebar" class="d-flex flex-column align-items-center align-items-lg-start p-3 bg_top_sidebar">
                 <div class="sidebar_icon">
                     <a href="" class="text-white me-lg-1"> <i class="fa-solid fa-house"></i></a>
@@ -76,19 +76,22 @@
                         <button type="button" class="btn btn-outline-light">+</button>
                     </div>
                     <div id="header_buttons"
-                        class="col-6 col-sm-5 col-md d-flex align-items-center flex-wrap mb-3 order-md-1">
+                        class="col-6 col-sm-5 d-flex align-items-center flex-wrap mb-3 order-md-1">
                         <div class="d-flex align-items-center">
                             <h2 class="me-2">Boolean</h2>
                             <span class="badge rounded-pill bg_header_buttons">Piano Blaze</span>
                         </div>
-                        <div class="d-flex row align-items-center gx-2">
-                            <span class="badge rounded-pill col bg_header_buttons">3 app</span>
-                            <span class="col"><i class="fa-solid fa-angles-right"></i></span>
+                        <div class="d-flex row align-items-center gx-2 flex-wrap">
+                            <span class="badge rounded-pill col bg_header_buttons col-md-2">3 app</span>
+                            <span class="col col-md-1"><i class="fa-solid fa-angles-right"></i></span>
                             <span class="badge rounded-circle d-md-none col bg_header_buttons">+
                             </span>
-                            <span class="badge rounded-pill d-none d-md-inline col me-1 bg_header_buttons">Boolean mobile app</span>
-                            <span class="badge rounded-pill d-none d-md-inline col me-1 bg_header_buttons">Boolean web app</span>
-                            <span class="badge rounded-pill d-none d-md-inline col me-1 bg_header_buttons">Boolean blog app</span>
+                            <span class="badge rounded-pill d-none d-md-inline col me-1 bg_header_buttons">Boolean
+                                mobile app</span>
+                            <span class="badge rounded-pill d-none d-md-inline col me-1 bg_header_buttons">Boolean web
+                                app</span>
+                            <span class="badge rounded-pill d-none d-md-inline col me-1 bg_header_buttons">Boolean blog
+                                app</span>
                         </div>
                     </div>
                     <div id="online_students" class="col order-md-2">
@@ -100,9 +103,44 @@
             </header>
 
             <!-- /content_header -->
-            <div class="row">
+            <div class="row my-4 mx-2 overflow-auto">
                 <section id="main_left" class="col-12 col-md-8">
-
+                    <div class="card">
+                        <div class="card-header">
+                          <h2>Prossime classi</h2>
+                        </div>
+                        <div class="card-body">
+                            <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">First</th>
+                                    <th scope="col">Last</th>
+                                    <th scope="col">Handle</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">2</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">3</th>
+                                    <td colspan="2">Larry the Bird</td>
+                                    <td>@twitter</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                        </div>
+                      </div>
                 </section>
                 <!-- /#main_left -->
                 <section id="main_right" class="col-12 col-md-4">
