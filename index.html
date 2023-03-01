@@ -16,8 +16,8 @@
 
 <body>
     <div id="top">
-        <header id="app_header">
-            <nav class="navbar bg-body-tertiary">
+        <header id="app_header" class="bg_app_header">
+            <nav class="navbar bg_header_nav">
                 <div class="container-fluid">
                     <div id="logo_section">
                         <a class="navbar-brand d-lg-none" href="#">
@@ -45,8 +45,8 @@
     </div>
     <!-- /#top -->
     <div id="bottom" class="d-flex">
-        <div id="sidebar" class="text-white">
-            <div id="top_sidebar" class="d-flex flex-column align-items-center align-items-lg-start py-3 px-3 bg_top_sider">
+        <div id="sidebar" class="text-white d-flex flex-column justify-content-between bg_sidebar">
+            <div id="top_sidebar" class="d-flex flex-column align-items-center align-items-lg-start p-3 bg_top_sidebar">
                 <div class="sidebar_icon">
                     <a href="" class="text-white me-lg-1"> <i class="fa-solid fa-house"></i></a>
                     <span class="d-none d-lg-inline">Home</span>
@@ -58,6 +58,12 @@
                 <div class="sidebar_icon">
                     <a href="" class="text-white me-lg-1"><i class="fa-solid fa-signal"></i></a>
                     <span class="d-none d-lg-inline">Signal</span>
+                </div>
+            </div>
+            <div id="bottom_sidebar" class="d-flex flex-column align-items-center align-items-lg-start p-3" >
+                <div class="sidebar_icon">
+                    <a href="" class="text-white me-lg-1"><i class="fa-solid fa-gear"></i></a>
+                    <span class="d-none d-lg-inline">Admin</span>
                 </div>
             </div>
         </div>

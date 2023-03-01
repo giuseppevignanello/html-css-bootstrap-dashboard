@@ -16,11 +16,25 @@
 
 
 /* #region utilities */
+.bg_app_header {
+    background-color: #f8f9fa;
+}
+
+.bg_header_nav {
+    background-color: #ffffff;
+}
+
+
 .bg_search_form {
     background-color: #e5e5e5;
 }
 
-.bg_top_sider {
+
+.bg_sidebar {
+    background-color: #12293e;
+}
+
+.bg_top_sidebar {
     background-color: #051e34;
 }
 
