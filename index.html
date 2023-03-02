@@ -27,7 +27,7 @@
                             <img src="./assets/img/logo.svg" alt="Logo" class="d-inline-block align-text-top">
                         </a>
                     </div>
-                    <form class="d-flex col" role="search">
+                    <form class="d-flex w-75" role="search">
                         <input class="form-control me-2 bg_search_form" type="search"
                             placeholder="&#8981;  Prova a cercare: Lezioni di laravel" aria-label="Search">
                     </form>
@@ -39,8 +39,8 @@
 
                         <div class="dropdown d-inline">
                             <button class="btn pb_07" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <div id="bell">
-                                    <a href="" class="text-warning"><i class="fa-solid fa-bell"></i></a>
+                                <div id="bell" class="text-warning">
+                                    <i class="fa-solid fa-bell"></i>
                                 </div>
                             </button>
                             <ul class="dropdown-menu dropdown-menu-end">
@@ -82,12 +82,12 @@
             </div>
         </div>
         <!-- /sidebar -->
-        <main class="">
+        <main>
             <header id="content_header" class="bg-primary py-2 px-2 ">
-                <div class="row d-flex flex-column flex-md-row justify-content-md-between">
+                <div class="row flex-column flex-md-row justify-content-md-between">
                     <div id="new_student" class="col d-flex align-items-center align-items-md-start mb-3 order-md-3 ">
                         <span class="d-block me-3 text-white ">Nuovo Studente</span>
-                        <button type="button" class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas"
+                        <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
                         <div class="offcanvas offcanvas-end w-100 w_lg_50" tabindex="-1" id="offcanvasRight"
                             aria-labelledby="offcanvasRightLabel">
@@ -107,7 +107,7 @@
                                         <input type="text" class="form-control" id="inputCognome4">
                                     </div>
                                     <div class="col-12 col-sm-6">
-                                        <label for="inputMail4" class="form-label">Email</label>
+                                        <label class="form-label">Email</label>
                                         <div class="input-group mb-3">
                                             <span class="input-group-text" id="basic-addon1">@</span>
                                             <input type="text" class="form-control" aria-label="Mail"
@@ -172,15 +172,17 @@
 
 
 
-                        <!-- /offcanvas -->
+                        
                     </div>
-                    <div id="header_buttons"
-                        class="text-white col-6 col-sm-5 col-md-3 col-lg-7 col-xxl-5 d-flex align-items-center flex-wrap mb-3 order-md-1 me-3 pe-0">
+                    <!-- /offcanvas -->
+                   
+                   
+                    <div class="text-white col-6 col-sm-5 col-md-3 col-lg-7 col-xxl-5 d-flex align-items-center flex-wrap mb-3 order-md-1 me-3 pe-0">
                         <div class="d-flex align-items-center">
                             <h2 class="me-2">Boolean</h2>
                             <span class="badge rounded-pill bg_header_buttons fw-normal">Piano Blaze</span>
                         </div>
-                        <div class="d-flex row align-items-center gx-2 flex-wrap col-lg-12 col-xl-12 ">
+                        <div class="row align-items-center gx-2 flex-wrap col-lg-12 col-xl-12 ">
                             <span class="badge rounded-pill col bg_header_buttons col-lg-2 fw-normal">3 app</span>
                             <span class="col"><i class="fa-solid fa-angles-right"></i></span>
                             <span class="badge rounded-circle d-lg-none col bg_header_buttons fw-normal">+
@@ -216,7 +218,7 @@
                                 <table class="table ">
                                     <thead>
                                         <tr>
-                                            <th scope="col" class="fw-normal col-10 col-lg-8">Nome</th>
+                                            <th scope="col" class="fw-normal w_83 w_lg_67">Nome</th>
                                             <th scope="col"
                                                 class="d-none d-md-table-cell  fw-normal text-center text-nowrap">Data
                                                 inizio</th>
@@ -228,7 +230,7 @@
                                     </thead>
                                     <tbody>
                                         <tr class="border-bottom">
-                                            <th scope="row" class="col-10 col-lg-8">
+                                            <th scope="row" class="w_83 w_lg_67">
                                                 <img class="img-fluid" src="./assets/img/class-avatar.jpg"
                                                     alt="class avatar">
                                                 <span class="fw-normal"> Classe 75</span>
@@ -242,15 +244,15 @@
                                                 <button type="button" class="me-2 btn btn-outline-secondary"><i
                                                         class="fa-solid fa-pencil"></i></button>
                                                 <button type="button" class="me-2 btn btn-outline-secondary"
-                                                    data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                                    data-bs-toggle="modal" data-bs-target="#exampleModal1"><i
                                                         class="fa-solid fa-trash"></i></button>
 
-                                                <div class="modal fade" id="exampleModal" tabindex="-1"
-                                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal fade" id="exampleModal1" tabindex="-1"
+                                                    aria-labelledby="exampleModalLabel1" aria-hidden="true">
                                                     <div class="modal-dialog">
                                                         <div class="modal-content">
                                                             <div class="modal-header">
-                                                                <h1 class="modal-title fs-5" id="exampleModalLabel">Are
+                                                                <h1 class="modal-title fs-5" id="exampleModalLabel1">Are
                                                                     you sure?</h1>
                                                                 <button type="button" class="btn-close"
                                                                     data-bs-dismiss="modal" aria-label="Close"></button>
@@ -268,7 +270,7 @@
                                             </td>
                                         </tr>
                                         <tr class="border-bottom">
-                                            <th scope="row" class="col-10 col-lg-8">
+                                            <th scope="row" class="w_83 w_lg_67">
                                                 <img class="img-fluid" src="./assets/img/class-avatar.jpg"
                                                     alt="class avatar">
                                                 <span class="fw-normal"> Classe 76</span>
@@ -282,14 +284,14 @@
                                                 <button type="button" class="me-2 btn btn-outline-secondary"><i
                                                         class="fa-solid fa-pencil"></i></button>
                                                 <button type="button" class="me-2 btn btn-outline-secondary"
-                                                    data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                                    data-bs-toggle="modal" data-bs-target="#exampleModal2"><i
                                                         class="fa-solid fa-trash"></i></button>
-                                                <div class="modal fade" id="exampleModal" tabindex="-1"
-                                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal fade" id="exampleModal2" tabindex="-1"
+                                                    aria-labelledby="exampleModalLabel2" aria-hidden="true">
                                                     <div class="modal-dialog">
                                                         <div class="modal-content">
                                                             <div class="modal-header">
-                                                                <h1 class="modal-title fs-5" id="exampleModalLabel">Are
+                                                                <h1 class="modal-title fs-5" id="exampleModalLabel2">Are
                                                                     you sure?</h1>
                                                                 <button type="button" class="btn-close"
                                                                     data-bs-dismiss="modal" aria-label="Close"></button>
@@ -309,7 +311,7 @@
                                             </td>
                                         </tr>
                                         <tr class="border-bottom">
-                                            <th scope="row" class="col-10 col-lg-8">
+                                            <th scope="row" class="w_83 w_lg_67">
                                                 <img class="img-fluid" src="./assets/img/class-avatar.jpg"
                                                     alt="class avatar">
                                                 <span class="fw-normal"> Classe 77</span>
@@ -323,14 +325,14 @@
                                                 <button type="button" class="me-2 btn btn-outline-secondary"><i
                                                         class="fa-solid fa-pencil"></i></button>
                                                 <button type="button" class="me-2 btn btn-outline-secondary"
-                                                    data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                                    data-bs-toggle="modal" data-bs-target="#exampleModal3"><i
                                                         class="fa-solid fa-trash"></i></button>
-                                                <div class="modal fade" id="exampleModal" tabindex="-1"
-                                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal fade" id="exampleModal3" tabindex="-1"
+                                                    aria-labelledby="exampleModalLabel3" aria-hidden="true">
                                                     <div class="modal-dialog">
                                                         <div class="modal-content">
                                                             <div class="modal-header">
-                                                                <h1 class="modal-title fs-5" id="exampleModalLabel">Are
+                                                                <h1 class="modal-title fs-5" id="exampleModalLabel3">Are
                                                                     you sure?</h1>
                                                                 <button type="button" class="btn-close"
                                                                     data-bs-dismiss="modal" aria-label="Close"></button>
@@ -350,7 +352,7 @@
                                             </td>
                                         </tr>
                                         <tr class="border-bottom">
-                                            <th scope="row" class="col-10 col-lg-8">
+                                            <th scope="row" class="w_83 w_lg_67">
                                                 <img class="img-fluid" src="./assets/img/class-avatar.jpg"
                                                     alt="class avatar">
                                                 <span class="fw-normal"> Classe 78</span>
@@ -364,14 +366,14 @@
                                                 <button type="button" class="me-2 btn btn-outline-secondary"><i
                                                         class="fa-solid fa-pencil"></i></button>
                                                 <button type="button" class="me-2 btn btn-outline-secondary"
-                                                    data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                                    data-bs-toggle="modal" data-bs-target="#exampleModal4"><i
                                                         class="fa-solid fa-trash"></i></button>
-                                                <div class="modal fade" id="exampleModal" tabindex="-1"
-                                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal fade" id="exampleModal4" tabindex="-1"
+                                                    aria-labelledby="exampleModalLabel4" aria-hidden="true">
                                                     <div class="modal-dialog">
                                                         <div class="modal-content">
                                                             <div class="modal-header">
-                                                                <h1 class="modal-title fs-5" id="exampleModalLabel">Are
+                                                                <h1 class="modal-title fs-5" id="exampleModalLabel4">Are
                                                                     you sure?</h1>
                                                                 <button type="button" class="btn-close"
                                                                     data-bs-dismiss="modal" aria-label="Close"></button>
@@ -391,7 +393,7 @@
                                             </td>
                                         </tr>
                                         <tr class="border-bottom">
-                                            <th scope="row" class="col-10 col-lg-8">
+                                            <th scope="row" class="w_83 w_lg_67">
                                                 <img class="img-fluid" src="./assets/img/class-avatar.jpg"
                                                     alt="class avatar">
                                                 <span class="fw-normal"> Classe 79</span>
@@ -405,14 +407,14 @@
                                                 <button type="button" class="me-2 btn btn-outline-secondary"><i
                                                         class="fa-solid fa-pencil"></i></button>
                                                 <button type="button" class="me-2 btn btn-outline-secondary"
-                                                    data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                                    data-bs-toggle="modal" data-bs-target="#exampleModal5"><i
                                                         class="fa-solid fa-trash"></i></button>
-                                                <div class="modal fade" id="exampleModal" tabindex="-1"
-                                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal fade" id="exampleModal5" tabindex="-1"
+                                                    aria-labelledby="exampleModalLabel5" aria-hidden="true">
                                                     <div class="modal-dialog">
                                                         <div class="modal-content">
                                                             <div class="modal-header">
-                                                                <h1 class="modal-title fs-5" id="exampleModalLabel">Are
+                                                                <h1 class="modal-title fs-5" id="exampleModalLabel5">Are
                                                                     you sure?</h1>
                                                                 <button type="button" class="btn-close"
                                                                     data-bs-dismiss="modal" aria-label="Close"></button>
@@ -431,7 +433,7 @@
                                             </td>
                                         </tr>
                                         <tr class="border-bottom">
-                                            <th scope="row" class="col-10 col-lg-8">
+                                            <th scope="row" class="w_83 w_lg_67">
                                                 <img class="img-fluid" src="./assets/img/class-avatar.jpg"
                                                     alt="class avatar">
                                                 <span class="fw-normal"> Classe 80</span>
@@ -445,14 +447,14 @@
                                                 <button type="button" class="me-2 btn btn-outline-secondary"><i
                                                         class="fa-solid fa-pencil"></i></button>
                                                 <button type="button" class="me-2 btn btn-outline-secondary"
-                                                    data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                                    data-bs-toggle="modal" data-bs-target="#exampleModal6"><i
                                                         class="fa-solid fa-trash"></i></button>
-                                                <div class="modal fade" id="exampleModal" tabindex="-1"
-                                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal fade" id="exampleModal6" tabindex="-1"
+                                                    aria-labelledby="exampleModalLabel6" aria-hidden="true">
                                                     <div class="modal-dialog">
                                                         <div class="modal-content">
                                                             <div class="modal-header">
-                                                                <h1 class="modal-title fs-5" id="exampleModalLabel">Are
+                                                                <h1 class="modal-title fs-5" id="exampleModalLabel6">Are
                                                                     you sure?</h1>
                                                                 <button type="button" class="btn-close"
                                                                     data-bs-dismiss="modal" aria-label="Close"></button>
@@ -471,7 +473,7 @@
                                             </td>
                                         </tr>
                                         <tr class="border-bottom">
-                                            <th scope="row" class="col-10 col-lg-8">
+                                            <th scope="row" class="w_83 w_lg_67">
                                                 <img class="img-fluid" src="./assets/img/class-avatar.jpg"
                                                     alt="class avatar">
                                                 <span class="fw-normal"> Classe 81</span>
@@ -483,17 +485,17 @@
                                             </td>
                                             <td class="d-flex justify-content-center border-bottom-0">
                                                 <button type="button" class="me-2 btn btn-outline-secondary"
-                                                    data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                                    data-bs-toggle="modal" data-bs-target="#exampleModal7"><i
                                                         class="fa-solid fa-pencil"></i></button>
                                                 <button type="button" class="me-2 btn btn-outline-secondary"
-                                                    data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                    data-bs-toggle="modal" data-bs-target="#exampleModal7">
                                                     <i class="fa-solid fa-trash"></i></button>
-                                                <div class="modal fade" id="exampleModal" tabindex="-1"
-                                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal fade" id="exampleModal7" tabindex="-1"
+                                                    aria-labelledby="exampleModalLabel7" aria-hidden="true">
                                                     <div class="modal-dialog">
                                                         <div class="modal-content">
                                                             <div class="modal-header">
-                                                                <h1 class="modal-title fs-5" id="exampleModalLabel">Are
+                                                                <h1 class="modal-title fs-5" id="exampleModalLabel7">Are
                                                                     you sure?</h1>
                                                                 <button type="button" class="btn-close"
                                                                     data-bs-dismiss="modal" aria-label="Close"></button>
@@ -515,7 +517,7 @@
                                             </td>
                                         </tr>
                                         <tr class="border-bottom">
-                                            <th scope="row" class="col-10 col-lg-8">
+                                            <th scope="row" class="w_83 w_lg_67">
                                                 <img class="img-fluid" src="./assets/img/class-avatar.jpg"
                                                     alt="class avatar">
                                                 <span class="fw-normal"> Classe 82</span>
@@ -529,14 +531,14 @@
                                                 <button type="button" class="me-2 btn btn-outline-secondary"><i
                                                         class="fa-solid fa-pencil"></i></button>
                                                 <button type="button" class="me-2 btn btn-outline-secondary"
-                                                    data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                    data-bs-toggle="modal" data-bs-target="#exampleModal8">
                                                     <i class="fa-solid fa-trash"></i></button>
-                                                <div class="modal fade" id="exampleModal" tabindex="-1"
-                                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal fade" id="exampleModal8" tabindex="-1"
+                                                    aria-labelledby="exampleModalLabel8" aria-hidden="true">
                                                     <div class="modal-dialog">
                                                         <div class="modal-content">
                                                             <div class="modal-header">
-                                                                <h1 class="modal-title fs-5" id="exampleModalLabel">Are
+                                                                <h1 class="modal-title fs-5" id="exampleModalLabel8">Are
                                                                     you sure?</h1>
                                                                 <button type="button" class="btn-close"
                                                                     data-bs-dismiss="modal" aria-label="Close"></button>
@@ -565,7 +567,7 @@
 
 
 
-                             
+
                             </div>
 
                         </div>
@@ -628,7 +630,7 @@
                             </div>
                         </div>
 
-                           <!-- /FAQ -->
+                        <!-- /FAQ -->
                     </section>
                     <!-- /#main_left -->
                     <section id="main_right" class="col-12 col-md-4 mb-3">
@@ -640,24 +642,24 @@
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item">
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
+                                        <label class="form-check-label" for="flexCheckDefault1">
                                             Kickoff nuove classi
                                         </label>
                                     </div>
                                 </li>
                                 <li class="list-group-item">
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
+                                        <label class="form-check-label" for="flexCheckDefault2">
                                             Lezioni su Bootstrap 5
                                         </label>
                                     </div>
                                 </li>
                                 <li class="list-group-item">
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
+                                        <label class="form-check-label" for="flexCheckDefault3">
                                             Controllare username github studenti
                                         </label>
                                     </div>

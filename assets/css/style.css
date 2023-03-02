@@ -54,6 +54,9 @@
     padding-bottom: 0.7rem
 }
 
+.w_83 {
+    width: 83%;
+}
 
 /* #endregion utilities */
 /* #endregion header  */
@@ -121,6 +124,10 @@ main {
 @media screen and (min-width: 992px) {
     .w_lg_50 {
         width: 50% !important;
+    }
+
+    .w_lg_67 {
+        width: 67%
     }
 
     #sidebar {
