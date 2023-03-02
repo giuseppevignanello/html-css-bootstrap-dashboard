@@ -141,4 +141,9 @@ main {
         cursor: pointer;
     }
 
+    #header_buttons .badge:hover {
+        cursor: pointer;
+
+    }
+
 /* #endregion hover effects */
