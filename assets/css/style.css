@@ -91,19 +91,6 @@ main {
     margin-left: 50px
 }
 
-.debug main {
-
-    background-color: red;
-}
-
-.debug main .row {
-    height: 100%;
-}
-
-.debug #main_left,
-.debug #main_right {
-    background-color: yellow;
-}
 
 /* #region main_left  */
 
