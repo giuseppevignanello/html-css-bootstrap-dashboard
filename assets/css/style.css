@@ -38,6 +38,7 @@
     background-color: #165bba;
 }
 
+
 .col_50 {
     width: 50%;
 }
@@ -110,6 +111,9 @@ main {
 
 
 @media screen and (min-width: 992px) {
+    .w_lg_50 {
+        width: 50%!important;
+    }
 
     #sidebar {
         width: 150px;
