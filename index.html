@@ -29,7 +29,7 @@
                     </div>
                     <form class="d-flex col" role="search">
                         <input class="form-control me-2 bg_search_form" type="search"
-                            placeholder= "&#8981;  Prova a cercare: Lezioni di laravel" aria-label="Search">
+                            placeholder="&#8981;  Prova a cercare: Lezioni di laravel" aria-label="Search">
                     </form>
                     <div id="header_buttons">
                         <a href="" class="d-none d-lg-inline text text-muted"><i class="fa-solid fa-list"></i></a>
@@ -75,7 +75,8 @@
                         <span class="d-block me-3">Nuovo Studente</span>
                         <button type="button" class="btn btn-outline-light">+</button>
                     </div>
-                    <div id="header_buttons" class="col-6 col-sm-5 col-md-3 col-lg-6 d-flex align-items-center flex-wrap mb-3 order-md-1">
+                    <div id="header_buttons"
+                        class="col-6 col-sm-5 col-md-3 col-lg-6 d-flex align-items-center flex-wrap mb-3 order-md-1">
                         <div class="d-flex align-items-center">
                             <h2 class="me-2">Boolean</h2>
                             <span class="badge rounded-pill bg_header_buttons">Piano Blaze</span>
@@ -85,11 +86,16 @@
                             <span class="col"><i class="fa-solid fa-angles-right"></i></span>
                             <span class="badge rounded-circle d-lg-none col bg_header_buttons">+
                             </span>
-                            <span class="badge rounded-pill d-none d-lg-inline col me-1 bg_header_buttons col-lg-3">Boolean
+                            <span
+                                class="badge rounded-pill d-none d-lg-inline col me-1 bg_header_buttons col-lg-3">Boolean
                                 mobile app</span>
-                            <span class="badge rounded-pill d-none d-lg-inline col me-1 bg_header_buttons col-lg-3">Boolean web
+                            <span
+                                class="badge rounded-pill d-none d-lg-inline col me-1 bg_header_buttons col-lg-3">Boolean
+                                web
                                 app</span>
-                            <span class="badge rounded-pill d-none d-lg-inline col me-1 bg_header_buttons col-lg-3">Boolean blog
+                            <span
+                                class="badge rounded-pill d-none d-lg-inline col me-1 bg_header_buttons col-lg-3">Boolean
+                                blog
                                 app</span>
                         </div>
                     </div>
@@ -114,7 +120,9 @@
                                     <thead>
                                         <tr>
                                             <th scope="col" class="fw-normal col-10 col-lg-8">Nome</th>
-                                            <th scope="col" class="d-none d-md-table-cell  fw-normal text-center text-nowrap">Data inizio</th>
+                                            <th scope="col"
+                                                class="d-none d-md-table-cell  fw-normal text-center text-nowrap">Data
+                                                inizio</th>
                                             <th scope="col" class="d-none d-md-table-cell fw-normal text-center ">ROI
                                             </th>
                                             <th scope="col" class="fw-normal text-center">Stato </th>
@@ -338,42 +346,55 @@
                     </section>
                     <!-- /#main_left -->
                     <section id="main_right" class="col-12 col-md-4">
-                        <div>
-                            <div class="card mb-3" id="todo">
-                                <div class="card-header">
-                                    <h3>Todo</h3>
-                                </div>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value=""
-                                                id="flexCheckDefault">
-                                            <label class="form-check-label" for="flexCheckDefault">
-                                                Kickoff nuove classi
-                                            </label>
-                                        </div>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value=""
-                                                id="flexCheckDefault">
-                                            <label class="form-check-label" for="flexCheckDefault">
-                                                Lezioni su Bootstrap 5
-                                            </label>
-                                        </div>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value=""
-                                                id="flexCheckDefault">
-                                            <label class="form-check-label" for="flexCheckDefault">
-                                                Controllare username github studenti
-                                            </label>
-                                        </div>
-                                    </li>
-                                </ul>
+
+                        <div class="card mb-3" id="todo">
+                            <div class="card-header">
+                                <h3>Todo</h3>
                             </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Kickoff nuove classi
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Lezioni su Bootstrap 5
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Controllare username github studenti
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
+
+                        <div class="card">
+                            <img src="./assets/img/stats.jpeg" class="card-img-top" alt="stats">
+                            <div class="card-body">
+                              <h5 class="card-title">Utenti attivi</h5>
+                              <p class="card-text">Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item">Gennaio: 1200</li>
+                              <li class="list-group-item">Febbraio: 800</li>
+                              <li class="list-group-item">Marzo: 1500</li>
+                            </ul>
+                            <div class="card-body">
+                              <a href="#" class="card-link">Visualizza report approfondito</a>
+                            </div>
+                          </div>
+
                     </section>
                 </div>
             </div>
