@@ -34,10 +34,6 @@
     background-color: #12293e;
 }
 
-.bg_top_sidebar {
-    background-color: #051e34;
-}
-
 .bg_header_buttons {
     background-color: #165bba;
 }
@@ -69,6 +65,7 @@
     top:50px;
     height: calc(100% - 50px);
     z-index: 900;
+    background-image: url(../img/sidebar-bg.png);
 }
 
 .debug #sidebar {
