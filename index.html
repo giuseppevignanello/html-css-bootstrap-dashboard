@@ -16,7 +16,7 @@
 
 <body>
     <div id="top">
-        <header id="app_header" class="bg_app_header py-3">
+        <header id="app_header" class="bg_primary py-3">
             <nav class="navbar bg_header_nav">
                 <div class="container-fluid">
                     <div id="logo_section">
@@ -39,7 +39,9 @@
 
                         <div class="dropdown d-inline">
                             <button class="btn pb_07" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <a href="" class="text-warning"><i class="fa-solid fa-bell"></i></a>
+                                <div id="bell">
+                                    <a href="" class="text-warning"><i class="fa-solid fa-bell"></i></a>
+                                </div>
                             </button>
                             <ul class="dropdown-menu dropdown-menu-end">
                                 <li><a class="dropdown-item" href="#">Profilo</a></li>
@@ -473,34 +475,34 @@
                                             </td>
                                             <td class="d-flex justify-content-center border-bottom-0">
                                                 <button type="button" class="me-2 btn btn-outline-secondary"
-                                                data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                                    data-bs-toggle="modal" data-bs-target="#exampleModal"><i
                                                         class="fa-solid fa-pencil"></i></button>
-                                                        <button type="button" class="me-2 btn btn-outline-secondary"
-                                                        data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                                        <i class="fa-solid fa-trash"></i></button>
-                                                    <div class="modal fade" id="exampleModal" tabindex="-1"
-                                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                        <div class="modal-dialog">
-                                                            <div class="modal-content">
-                                                                <div class="modal-header">
-                                                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Are
-                                                                        you sure?</h1>
-                                                                    <button type="button" class="btn-close"
-                                                                        data-bs-dismiss="modal" aria-label="Close"></button>
-                                                                </div>
-                                                                <div class="modal-body">
-                                                                    ...
-                                                                </div>
-                                                                <div class="modal-footer">
-                                                                    <button type="button" class="btn btn-secondary"
-                                                                        data-bs-dismiss="modal">No</button>
-                                                                    <button type="button"
-                                                                        class="btn btn-primary">Yes</button>
-                                                                </div>
+                                                <button type="button" class="me-2 btn btn-outline-secondary"
+                                                    data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                    <i class="fa-solid fa-trash"></i></button>
+                                                <div class="modal fade" id="exampleModal" tabindex="-1"
+                                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h1 class="modal-title fs-5" id="exampleModalLabel">Are
+                                                                    you sure?</h1>
+                                                                <button type="button" class="btn-close"
+                                                                    data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                ...
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary"
+                                                                    data-bs-dismiss="modal">No</button>
+                                                                <button type="button"
+                                                                    class="btn btn-primary">Yes</button>
                                                             </div>
                                                         </div>
                                                     </div>
-    
+                                                </div>
+
                                             </td>
                                         </tr>
                                         <tr class="border-bottom">
@@ -616,7 +618,7 @@
                         </div>
                     </section>
                     <!-- /#main_left -->
-                    <section id="main_right" class="col-12 col-md-4">
+                    <section id="main_right" class="col-12 col-md-4 mb-3">
 
                         <div class="card mb-3" id="todo">
                             <div class="card-header">

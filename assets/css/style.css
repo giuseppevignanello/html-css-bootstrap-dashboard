@@ -1,19 +1,22 @@
-
-
 /* #region header  */
 #app_header {
     height: 80px;
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
 }
+
 .debug #nav_header {
 
     background-color: green;
 }
 
+.row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
 
 /* #region utilities */
 .bg_primary {
@@ -47,7 +50,7 @@
     width: 25%;
 }
 
-.pb_07{
+.pb_07 {
     padding-bottom: 0.7rem
 }
 
@@ -57,15 +60,15 @@
 
 /* #region bottom */
 #bottom {
-    height: calc(100vh - 80px);
-    overflow-x: hidden;
+    margin-top: 80px;
 }
+
 /* #region sidebar */
 #sidebar {
     width: 50px;
-    position:fixed;
-    left:0;
-    top:80px;
+    position: fixed;
+    left: 0;
+    top: 80px;
     height: calc(100vh - 80px);
     z-index: 900;
     background-image: url(../img/sidebar-bg.png);
@@ -82,17 +85,20 @@
 
 main {
     width: calc(100% - 50px);
-    margin-left:50px
+    margin-left: 50px
 }
-.debug main {
-  
-    background-color: red;
-} 
 
-.debug main .row   {
+.debug main {
+
+    background-color: red;
+}
+
+.debug main .row {
     height: 100%;
 }
-.debug #main_left, .debug #main_right {
+
+.debug #main_left,
+.debug #main_right {
     background-color: yellow;
 }
 
@@ -114,7 +120,7 @@ main {
 
 @media screen and (min-width: 992px) {
     .w_lg_50 {
-        width: 50%!important;
+        width: 50% !important;
     }
 
     #sidebar {
@@ -122,28 +128,137 @@ main {
     }
 
     main {
-        width:calc(100% - 150px);
+        width: calc(100% - 150px);
         margin-left: 150px
     }
-    
+
 }
 
 /* #enregion responsive */
 
 /* #region hover effects */
-    tr:not(thead>tr):hover {
-        background-color: #e5e5e5;
-        cursor: pointer;
-    }
+tr:not(thead>tr):hover {
+    background-color: #e5e5e5;
+    cursor: pointer;
+}
 
-    .sidebar_icon:hover{
-        background-color: #e5e5e5b4;
-        cursor: pointer;
-    }
+.sidebar_icon:hover {
+    background-color: #e5e5e5b4;
+    cursor: pointer;
+}
 
-    #header_buttons .badge:hover {
-        cursor: pointer;
+#header_buttons .badge:hover {
+    cursor: pointer;
 
-    }
+}
 
 /* #endregion hover effects */
+
+/* #region animations */
+
+#bell {
+    animation: ring 4s .7s ease-in-out infinite;
+}
+
+
+@keyframes ring {
+    0% {
+        transform: rotate(0);
+    }
+
+    1% {
+        transform: rotate(30deg);
+    }
+
+    3% {
+        transform: rotate(-28deg);
+    }
+
+    5% {
+        transform: rotate(34deg);
+    }
+
+    7% {
+        transform: rotate(-32deg);
+    }
+
+    9% {
+        transform: rotate(30deg);
+    }
+
+    11% {
+        transform: rotate(-28deg);
+    }
+
+    13% {
+        transform: rotate(26deg);
+    }
+
+    15% {
+        transform: rotate(-24deg);
+    }
+
+    17% {
+        transform: rotate(22deg);
+    }
+
+    19% {
+        transform: rotate(-20deg);
+    }
+
+    21% {
+        transform: rotate(18deg);
+    }
+
+    23% {
+        transform: rotate(-16deg);
+    }
+
+    25% {
+        transform: rotate(14deg);
+    }
+
+    27% {
+        transform: rotate(-12deg);
+    }
+
+    29% {
+        transform: rotate(10deg);
+    }
+
+    31% {
+        transform: rotate(-8deg);
+    }
+
+    33% {
+        transform: rotate(6deg);
+    }
+
+    35% {
+        transform: rotate(-4deg);
+    }
+
+    37% {
+        transform: rotate(2deg);
+    }
+
+    39% {
+        transform: rotate(-1deg);
+    }
+
+    41% {
+        transform: rotate(1deg);
+    }
+
+    43% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
+/* ovviamento l'ho copiato eh, ma giuro che ho letto per bene come funzionasse */
+
+/* #endregion animations */
