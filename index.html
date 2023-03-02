@@ -29,7 +29,7 @@
                     </div>
                     <form class="d-flex col" role="search">
                         <input class="form-control me-2 bg_search_form" type="search"
-                            placeholder="&#x1F50D; Prova a cercare: Lezioni di laravel" aria-label="Search">
+                            placeholder= "&#8981;  Prova a cercare: Lezioni di laravel" aria-label="Search">
                     </form>
                     <div id="header_buttons">
                         <a href="" class="d-none d-lg-inline text text-muted"><i class="fa-solid fa-list"></i></a>
@@ -44,7 +44,7 @@
         <!-- /app_header -->
     </div>
     <!-- /#top -->
-    <div id="bottom" class="d-flex">
+    <div id="bottom" class="d-flex bg_primary">
         <div id="sidebar" class="text-white d-flex flex-column justify-content-between bg_sidebar ">
             <div id="top_sidebar" class="d-flex flex-column align-items-center align-items-lg-start p-3 bg_top_sidebar">
                 <div class="sidebar_icon">
@@ -68,28 +68,28 @@
             </div>
         </div>
         <!-- /sidebar -->
-        <main class="bg_primary">
+        <main class="">
             <header id="content_header" class="bg-primary text-white py-4 px-2 ">
                 <div class="row d-flex flex-column flex-md-row justify-content-md-between">
                     <div id="new_student" class="col d-flex align-items-center align-items-md-start mb-3 order-md-3 ">
                         <span class="d-block me-3">Nuovo Studente</span>
                         <button type="button" class="btn btn-outline-light">+</button>
                     </div>
-                    <div id="header_buttons" class="col-6 col-sm-5 d-flex align-items-center flex-wrap mb-3 order-md-1">
+                    <div id="header_buttons" class="col-6 col-sm-5 col-md-3 col-lg-6 d-flex align-items-center flex-wrap mb-3 order-md-1">
                         <div class="d-flex align-items-center">
                             <h2 class="me-2">Boolean</h2>
                             <span class="badge rounded-pill bg_header_buttons">Piano Blaze</span>
                         </div>
                         <div class="d-flex row align-items-center gx-2 flex-wrap">
-                            <span class="badge rounded-pill col bg_header_buttons col-md-2">3 app</span>
-                            <span class="col col-md-1"><i class="fa-solid fa-angles-right"></i></span>
-                            <span class="badge rounded-circle d-md-none col bg_header_buttons">+
+                            <span class="badge rounded-pill col bg_header_buttons col-lg-2">3 app</span>
+                            <span class="col"><i class="fa-solid fa-angles-right"></i></span>
+                            <span class="badge rounded-circle d-lg-none col bg_header_buttons">+
                             </span>
-                            <span class="badge rounded-pill d-none d-md-inline col me-1 bg_header_buttons">Boolean
+                            <span class="badge rounded-pill d-none d-lg-inline col me-1 bg_header_buttons col-lg-3">Boolean
                                 mobile app</span>
-                            <span class="badge rounded-pill d-none d-md-inline col me-1 bg_header_buttons">Boolean web
+                            <span class="badge rounded-pill d-none d-lg-inline col me-1 bg_header_buttons col-lg-3">Boolean web
                                 app</span>
-                            <span class="badge rounded-pill d-none d-md-inline col me-1 bg_header_buttons">Boolean blog
+                            <span class="badge rounded-pill d-none d-lg-inline col me-1 bg_header_buttons col-lg-3">Boolean blog
                                 app</span>
                         </div>
                     </div>
@@ -102,7 +102,7 @@
             </header>
 
             <!-- /content_header -->
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row my-4 justify-content-between">
                     <section id="main_left" class="col-12 col-md-8">
                         <div class="card mb-3" id="next_classes">
@@ -110,52 +110,159 @@
                                 <h3>Prossime classi</h3>
                             </div>
                             <div class="card-body">
-                                <table class="table">
+                                <table class="table ">
                                     <thead>
                                         <tr>
-                                            <th scope="col" class=" fw-normal">Nome</th>
-                                            <th scope="col" class="d-none d-md-table-cell  fw-normal">Data
-                                                inizio</th>
-                                            <th scope="col" class="d-none d-md-table-cell fw-normal">ROI
+                                            <th scope="col" class="fw-normal col-10 col-lg-8">Nome</th>
+                                            <th scope="col" class="d-none d-md-table-cell  fw-normal text-center text-nowrap">Data inizio</th>
+                                            <th scope="col" class="d-none d-md-table-cell fw-normal text-center ">ROI
                                             </th>
-                                            <th scope="col" class="fw-normal">Stato </th>
-                                            <th scope="col" class="fw-normal">Azioni</th>
+                                            <th scope="col" class="fw-normal text-center">Stato </th>
+                                            <th scope="col" class="fw-normal text-center">Azioni</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <th scope="row">
+                                        <tr class="border-bottom">
+                                            <th scope="row" class="col-10 col-lg-8">
                                                 <img class="img-fluid" src="./assets/img/class-avatar.jpg"
                                                     alt="class avatar">
                                                 <span class="fw-normal"> Classe 75</span>
                                             </th>
-                                            <td class="d-none d-md-table-cell">15 febbraio 2021</td>
-                                            <td class="d-none d-md-table-cell">20%</td>
-                                            <td>
+                                            <td class="d-none d-md-table-cell text-center text-nowrap">15 feb 2021</td>
+                                            <td class="d-none d-md-table-cell text-center">20%</td>
+                                            <td class="text-center">
                                                 <span class="badge text-bg-success">Done</span>
                                             </td>
-                                            <td class="d-flex">
+                                            <td class="d-flex justify-content-center border-bottom-0">
                                                 <button type="button" class="me-2 btn btn-outline-secondary"><i
                                                         class="fa-solid fa-pencil"></i></button>
-                                                <button type="utton" class="me-2 btn btn-outline-secondary"><i
+                                                <button type="button" class="me-2 btn btn-outline-secondary"><i
                                                         class="fa-solid fa-trash"></i></button>
                                             </td>
                                         </tr>
-                                        <tr>
-                                            <th scope="row">
+                                        <tr class="border-bottom">
+                                            <th scope="row" class="col-10 col-lg-8">
                                                 <img class="img-fluid" src="./assets/img/class-avatar.jpg"
                                                     alt="class avatar">
-                                                <span class="fw-normal"> Classe 75</span>
+                                                <span class="fw-normal"> Classe 76</span>
                                             </th>
-                                            <td class="d-none d-md-table-cell">15 febbraio 2021</td>
-                                            <td class="d-none d-md-table-cell">20%</td>
-                                            <td>
+                                            <td class="d-none d-md-table-cell text-center text-nowrap">16 feb 2021</td>
+                                            <td class="d-none d-md-table-cell text-center">20%</td>
+                                            <td class="text-center">
                                                 <span class="badge text-bg-success">Done</span>
                                             </td>
-                                            <td class="d-flex">
+                                            <td class="d-flex justify-content-center border-bottom-0">
                                                 <button type="button" class="me-2 btn btn-outline-secondary"><i
                                                         class="fa-solid fa-pencil"></i></button>
-                                                <button type="utton" class="me-2 btn btn-outline-secondary"><i
+                                                <button type="button" class="me-2 btn btn-outline-secondary"><i
+                                                        class="fa-solid fa-trash"></i></button>
+                                            </td>
+                                        </tr>
+                                        <tr class="border-bottom">
+                                            <th scope="row" class="col-10 col-lg-8">
+                                                <img class="img-fluid" src="./assets/img/class-avatar.jpg"
+                                                    alt="class avatar">
+                                                <span class="fw-normal"> Classe 77</span>
+                                            </th>
+                                            <td class="d-none d-md-table-cell text-center text-nowrap">17 feb 2021</td>
+                                            <td class="d-none d-md-table-cell text-center">20%</td>
+                                            <td class="text-center">
+                                                <span class="badge text-bg-warning text-white">process</span>
+                                            </td>
+                                            <td class="d-flex justify-content-center border-bottom-0">
+                                                <button type="button" class="me-2 btn btn-outline-secondary"><i
+                                                        class="fa-solid fa-pencil"></i></button>
+                                                <button type="button" class="me-2 btn btn-outline-secondary"><i
+                                                        class="fa-solid fa-trash"></i></button>
+                                            </td>
+                                        </tr>
+                                        <tr class="border-bottom">
+                                            <th scope="row" class="col-10 col-lg-8">
+                                                <img class="img-fluid" src="./assets/img/class-avatar.jpg"
+                                                    alt="class avatar">
+                                                <span class="fw-normal"> Classe 78</span>
+                                            </th>
+                                            <td class="d-none d-md-table-cell text-center text-nowrap">18 feb 2021</td>
+                                            <td class="d-none d-md-table-cell text-center">20%</td>
+                                            <td class="text-center">
+                                                <span class="badge text-bg-success">Done</span>
+                                            </td>
+                                            <td class="d-flex justify-content-center border-bottom-0">
+                                                <button type="button" class="me-2 btn btn-outline-secondary"><i
+                                                        class="fa-solid fa-pencil"></i></button>
+                                                <button type="button" class="me-2 btn btn-outline-secondary"><i
+                                                        class="fa-solid fa-trash"></i></button>
+                                            </td>
+                                        </tr>
+                                        <tr class="border-bottom">
+                                            <th scope="row" class="col-10 col-lg-8">
+                                                <img class="img-fluid" src="./assets/img/class-avatar.jpg"
+                                                    alt="class avatar">
+                                                <span class="fw-normal"> Classe 79</span>
+                                            </th>
+                                            <td class="d-none d-md-table-cell text-center text-nowrap">19 feb 2021</td>
+                                            <td class="d-none d-md-table-cell text-center">20%</td>
+                                            <td class="text-center">
+                                                <span class="badge text-bg-danger">failed</span>
+                                            </td>
+                                            <td class="d-flex justify-content-center border-bottom-0">
+                                                <button type="button" class="me-2 btn btn-outline-secondary"><i
+                                                        class="fa-solid fa-pencil"></i></button>
+                                                <button type="button" class="me-2 btn btn-outline-secondary"><i
+                                                        class="fa-solid fa-trash"></i></button>
+                                            </td>
+                                        </tr>
+                                        <tr class="border-bottom">
+                                            <th scope="row" class="col-10 col-lg-8">
+                                                <img class="img-fluid" src="./assets/img/class-avatar.jpg"
+                                                    alt="class avatar">
+                                                <span class="fw-normal"> Classe 80</span>
+                                            </th>
+                                            <td class="d-none d-md-table-cell text-center text-nowrap">20 feb 2021</td>
+                                            <td class="d-none d-md-table-cell text-center">20%</td>
+                                            <td class="text-center">
+                                                <span class="badge text-bg-success">Done</span>
+                                            </td>
+                                            <td class="d-flex justify-content-center border-bottom-0">
+                                                <button type="button" class="me-2 btn btn-outline-secondary"><i
+                                                        class="fa-solid fa-pencil"></i></button>
+                                                <button type="button" class="me-2 btn btn-outline-secondary"><i
+                                                        class="fa-solid fa-trash"></i></button>
+                                            </td>
+                                        </tr>
+                                        <tr class="border-bottom">
+                                            <th scope="row" class="col-10 col-lg-8">
+                                                <img class="img-fluid" src="./assets/img/class-avatar.jpg"
+                                                    alt="class avatar">
+                                                <span class="fw-normal"> Classe 81</span>
+                                            </th>
+                                            <td class="d-none d-md-table-cell text-center text-nowrap">21 feb 2021</td>
+                                            <td class="d-none d-md-table-cell text-center">20%</td>
+                                            <td class="text-center">
+                                                <span class="badge text-bg-danger">failed</span>
+                                            </td>
+                                            <td class="d-flex justify-content-center border-bottom-0">
+                                                <button type="button" class="me-2 btn btn-outline-secondary"><i
+                                                        class="fa-solid fa-pencil"></i></button>
+                                                <button type="button" class="me-2 btn btn-outline-secondary"><i
+                                                        class="fa-solid fa-trash"></i></button>
+                                            </td>
+                                        </tr>
+                                        <tr class="border-bottom">
+                                            <th scope="row" class="col-10 col-lg-8">
+                                                <img class="img-fluid" src="./assets/img/class-avatar.jpg"
+                                                    alt="class avatar">
+                                                <span class="fw-normal"> Classe 82</span>
+                                            </th>
+                                            <td class="d-none d-md-table-cell text-center text-nowrap">22 feb 2021</td>
+                                            <td class="d-none d-md-table-cell text-center">20%</td>
+                                            <td class="text-center">
+                                                <span class="badge text-bg-success">Done</span>
+                                            </td>
+                                            <td class="d-flex justify-content-center border-bottom-0">
+                                                <button type="button" class="me-2 btn btn-outline-secondary"><i
+                                                        class="fa-solid fa-pencil"></i></button>
+                                                <button type="button" class="me-2 btn btn-outline-secondary"><i
                                                         class="fa-solid fa-trash"></i></button>
                                             </td>
                                         </tr>

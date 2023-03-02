@@ -3,7 +3,7 @@
 /* #region header  */
 #app_header {
     height: 50px;
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
@@ -42,6 +42,15 @@
     background-color: #165bba;
 }
 
+.col_50 {
+    width: 50%;
+}
+
+.col_25 {
+    width: 25%;
+}
+
+
 
 
 /* #endregion utilities */
@@ -49,6 +58,7 @@
 
 /* #region bottom */
 #bottom {
+    height: calc(100vh - 50px);
     overflow-x: hidden;
 }
 /* #region sidebar */
@@ -72,7 +82,6 @@
 
 main {
     width: calc(100% - 50px);
-    margin-top: 50px;
     margin-left:50px
 }
 .debug main {
@@ -101,6 +110,8 @@ main {
 /* #endregion bottom */
 
 /* #region responsive */
+
+
 @media screen and (min-width: 992px) {
 
     #sidebar {
