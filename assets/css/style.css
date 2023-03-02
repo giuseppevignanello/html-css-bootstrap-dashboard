@@ -47,6 +47,10 @@
     width: 25%;
 }
 
+.pb_07{
+    padding-bottom: 0.7rem
+}
+
 
 /* #endregion utilities */
 /* #endregion header  */
@@ -125,3 +129,16 @@ main {
 }
 
 /* #enregion responsive */
+
+/* #region hover effects */
+    tr:not(thead>tr):hover {
+        background-color: #e5e5e5;
+        cursor: pointer;
+    }
+
+    .sidebar_icon:hover{
+        background-color: #e5e5e5b4;
+        cursor: pointer;
+    }
+
+/* #endregion hover effects */
